@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UCSP PT 1.1</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navstyle.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <navbar><div class="topnav" id="topnav">
+                <ul>
+                    <li><a class="white whiteline" href="index.html">HOME</a></li>
+                    <li><a class="white whiteline" href="about.html">ABOUT</a></li>
+                    <li><a class="white whiteline" href="changes.html">CHANGES</a></li>
+                    <li><a class="white whiteline" href="outcomes.html" id="current_page">OUTCOMES</a></li>
+                    <li><a class="white whiteline" href="reflections.html">REFLECTIONS</a></li>
+                    <li><a class="white whiteline" href="message.html">MESSAGE</a></li>
+                </ul>
+            </div></navbar>
+        </header>
+
+        <div id="main">
+
+            <h1>OUTCOMES OF THE CHANGES</h1>
+            <hr style="width: 100%;">
+            <div id="infolist">
+                <div class="info" id="left-pic">
+                    <img src="photos/cultural.jpg" data-aos="fade-right" alt="Woman Loses Loved One.jpg">
+                    <div class="description"  data-aos="fade-down"><h2 style="margin-bottom: 0">Cultural and Social Dynamics</h2>
+                        <p style="text-align: left;">Socially and culturally, many Filipino families have gotten closer considering that they are all stuck at home. The increased amount of interaction between them has caused them to start working on their relationships whether they like it or not. With almost everyone being totally preoccupied by gadgets and technology, covid-19 has served as a way for families to work on what has been lost. As much as Filipinos would love to invite people over and accommodate those in need into their homes, this trait has, unfortunately, had to disappear. Cebuanos cannot take the risk of contracting the virus by letting anyone in their homes, including friends and other family. Due to this, it can be seen that many relationships have also been broken, because relationships are hard to keep up with the lessened social interaction and just seem to be harder to keep up through the online setting. Through these hard times, it can also be observed that the faith of many people have gotten stronger. Struggling to get through life or to save the life of a loved one, the only thing Cebuanos can do is rely on and pray to their benevolent God. Lastly, the popular characteristic of always smiling, having fun, and seeing the light through the tunnel has slowly, but surely been forgotten. It is always hard to keep a positive mindset when all things seem disoriented, and considering what people have lost during this pandemic, it’s no surprise that Cebuanos are not their usual joyous selves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info" id="right-pic">
+                    <div class="description" data-aos="fade-down"><h2>Economy</h2>
+                        <p style="text-align: left;">Economically, it cannot be stressed enough how much the Cebuanos have been hit by this pandemic. Whether rich or poor, everyone knows that our city has not been flourishing and that everyone has just taken major hits financially. Stock prices have dropped, investments and money have gone to waste and not only have minor businesses been forced to close down or file for bankruptcy, but so have major businesses, such as the supermarket, Fooda Saversmart. These shut downs, in turn, have had a domino effect on the unemployment of Cebuanos and their financial situation. As mentioned before the unemployment rate has doubled in Central Visayas as of January 2021, leaving more families in tougher living conditions, such as homelessness, hunger, no access to education and many more. With all of this in mind, we can confidently say that the economic growth of our city certainly took a hit towards rock bottom.
+                        </p>
+                    </div>
+                    <img src="photos/economy.jpg" data-aos="fade-left" alt="Closed Stores.jpg">
+                </div>
+
+                <div class="info" id="left-pic">
+                    <img src="photos/politics.jpg" data-aos="fade-right" alt="Pres. Duterte Wearing a Mask.jpg">
+                    <div class="description" data-aos="fade-down"><h2>Politics</h2>
+                        <p style="text-align: left;">Politically, our country went through phases where people lost almost all their trust in the government’s capability to protect this country from the pandemic. This included the incident when President Duterte was hesitant on the travel ban to China despite knowing that China was a covid-19 hotspot. There were also complaints regarding how slow and inefficient the government was in regards to acquiring and buying covid-19 vaccines when they were first released. Few strikes have occurred because of the decisions taken by the government, which include the strike by market vendors from the Carbon Public Market last March 2021 outside the City Hall. As of now, no one can say whether our government will stay politically stable because of the many events and painful yet required decisions that may happen over time. These may satisfy the citizens, such as when governments were handing out government aids and these may also stress out the citizens, such as when senseless corruption continues to exist in our government and when covid-19 restrictions were still being imposed due to the presence of the delta variant, despite the increase in vaccination rates. As a democratic country, the government’s power depends on the people and if they aren’t happy, political stability will be compromised. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#topnav" id="back" data-aos="zoom-in" data-aos-offset="0"> BACK TO TOP</a>
+
+        </div>
+
+        <script>
+
+            AOS.init({duration: 1500,});
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+            window.addEventListener('load', AOS.refresh());
+
+            $(document).ready(function () {
+
+                $('body').fadeIn(2000);
+
+                $('#back').hover(function(){
+                    $(this).css('background-color', '#FDFEFD');
+                    $(this).css('color', '#F3C62A');
+                    $(this).css('border', '#A4A5A4');
+                }, function(){
+                    $(this).css('color', '#FDFEFD');
+                    $(this).css('background-color', '#F3C62A');
+                    $(this).css('border', '#F3C62A');
+                });
+            });
+
+        </script>
+
+    </body>
+</html>

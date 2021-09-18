@@ -1,0 +1,63 @@
+@font-face{
+    font-family: avenir;
+    src: url("fonts/avenir.ttf");
+}
+
+.topnav {
+    overflow: hidden;
+    color: #FF4345;
+    width: 100%;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    z-index: 1000;
+}
+
+.topnav a {
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: avenir;
+    line-height: 50px;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    color:#A4A5A4;
+}
+
+#current_page{
+    color:#F3C62A;
+}
+
+.topnav ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+
+.topnav li {
+    display: table-cell;
+    position: relative;
+}
+
+.topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.topnav a.whiteline:after{background: #F3C62A;}
+
+.topnav a:hover:after {
+    width: 100%;
+    left: 0;
+}

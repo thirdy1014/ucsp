@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UCSP PT 1.1</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" media="all">
+        <link rel="stylesheet" type="text/css" href="navstyle.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <navbar><div class="topnav">
+                <ul>
+                    <li><a class="white whiteline" href="index.html">HOME</a></li>
+                    <li><a class="white whiteline" href="about.html">ABOUT</a></li>
+                    <li><a class="white whiteline" href="changes.html">CHANGES</a></li>
+                    <li><a class="white whiteline" href="outcomes.html">OUTCOMES</a></li>
+                    <li><a class="white whiteline" href="reflections.html">REFLECTIONS</a></li>
+                    <li><a class="white whiteline" href="message.html">MESSAGE</a></li>
+                </ul>
+            </div></navbar>
+        </header>
+
+        <div id="home" data-aos="zoom-out">
+            <img class="desktop" src="photos/mag cross.png" alt="Magellan's Cross.png">
+        </div>
+
+        <div id="footer" data-aos="fade-up" data-aos-offset="0">
+            <span>In partial fulfillment of the UCSP class</span>
+        </div>
+
+        <script>
+            AOS.init({duration: 1500,});
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+            window.addEventListener('load', AOS.refresh());
+        </script>
+
+    </body>
+</html>

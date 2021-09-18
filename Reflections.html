@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UCSP PT 1.1</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navstyle.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <navbar><div class="topnav" id="topnav">
+                <ul>
+                    <li><a class="white whiteline" href="index.html">HOME</a></li>
+                    <li><a class="white whiteline" href="about.html">ABOUT</a></li>
+                    <li><a class="white whiteline" href="changes.html">CHANGES</a></li>
+                    <li><a class="white whiteline" href="outcomes.html">OUTCOMES</a></li>
+                    <li><a class="white whiteline" href="reflections.html"id="current_page">REFLECTIONS</a></li>
+                    <li><a class="white whiteline" href="message.html">MESSAGE</a></li>
+                </ul>
+            </div></navbar>
+        </header>
+
+        <div id="main">
+
+            <h1>PERSONAL REFLECTIONS</h1>
+            <hr style="width: 100%;">
+            <div id="infolist">
+                <div class="info" id="left-pic">
+                    <img src="photos/worried.jfif" data-aos="fade-right" alt="man looks worried.jfif">
+                    <div class="description"  data-aos="fade-down"><h2 style="margin-bottom: 0">Initial Reactions</h2>
+                        <p style="text-align: left;">It definitely is heartbreaking hearing about what covid-19 has done to our city and its people. Our government was having great steady progress in developing our city but then all of this just had to be thrown down the bin and forgotten once covid-19 struck us and priorities needed to be set straight. It’s painful to see the many tough decisions having to be made both by the government and by the citizens in terms of their personal businesses and lifestyle.</p>
+                    </div>
+                </div>
+
+                <div class="info" id="right-pic">
+                    <div class="description" data-aos="fade-down"><h2>Identity Formation of the Youth</h2>
+                        <p style="text-align: left;">With social interactions being brought down to a minimum and children learning almost everything they can through the internet, the identity formation of the youth will definitely be different from those of the previous generations. Our youth is heavily influenced by what they see and hear from the internet, specifically from major content creators and social media influencers, which will affect the way they see themselves, such as their gender, and the way they act whether they follow the general social template or not. Their primary identity may not change as much since these are usually set once they are born and are not affected that much by their environment. Their secondary identity, on the other hand, is where all the hits are taken in regards to the changes brought by covid-19. Gender, as stated earlier may change. Educational backgrounds will be questionable in terms of the effectiveness of online classes while employment and one’s economic status will always be an insecurity and a thing to worry about for our youth as long as this pandemic persists.</p>
+                    </div>
+                    <img src="photos/identity.jfif" data-aos="fade-left" alt="Scrabble tiles.jfif">
+                </div>
+
+                <div class="info" id="left-pic">
+                    <img src="photos/hygiene.jfif" data-aos="fade-right" alt="alcohol and mask.jfif">
+                    <div class="description" data-aos="fade-down"><h2>Obedience To Cultural Values</h2>
+                        <p style="text-align: left;">These changes will definitely have an impact on our cultural values because of the setting itself. Our culture is always changing and adapting in response to our environment. Due to this, what our society or culture deems as good will eventually change along with our environment. Not only this, but this could also change the mindset of the Cebuanos when it comes to conforming to these cultural values. Should these values and norms change, a person may not be in favor of the new rules or what is deemed acceptable by society, which may lead to him/her deviating from what is accepted by society. This was clearly seen when people were first hesitant to stay in their homes or even do something as simple as wearing a mask and observing social distance. Overall, people will either deviate from the cultural values because of the many restrictions it imposes onto them compared to the pre-covid-19 era or conform to them due to the safety and health risks when not doing so.</p>
+                    </div>
+                </div>
+
+                <div class="info" id="right-pic">
+                    <div class="description" data-aos="fade-down"><h2>Society’s Conformity and Deviance</h2>
+                        <p style="text-align: left;">People who deviate or go against what should be followed need to learn that most of these ideas have been put in place for the good of all. They need to keep in mind that their actions do not only affect them, but everyone else in society. This pandemic has changed the way a lot of things work, and it cannot wait for you to change your ideas along with it. Lives are at stake as people choose to deviate from what is needed to be done. These are selfish and ignorant acts that cause collateral damage to innocent conforming citizens. For those who conform and follow the changes in society, I hope that you continue to find the strength to persevere through this pandemic and find the patience to encourage those who deviate, to follow you for the benefit of all.  </p>
+                    </div>
+                    <img src="photos/conformity.jpg" data-aos="fade-left" alt="Doctor holding sign.jpg">
+                </div>
+            </div>
+
+            <a href="#topnav" id="back" data-aos="zoom-in" data-aos-offset="0"> BACK TO TOP</a>
+
+        </div>
+
+        <script>
+
+            AOS.init({duration: 1500,});
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+            window.addEventListener('load', AOS.refresh());
+
+            $(document).ready(function () {
+
+                $('body').fadeIn(2000);
+
+                $('#back').hover(function(){
+                    $(this).css('background-color', '#FDFEFD');
+                    $(this).css('color', '#F3C62A');
+                    $(this).css('border', '#A4A5A4');
+                }, function(){
+                    $(this).css('color', '#FDFEFD');
+                    $(this).css('background-color', '#F3C62A');
+                    $(this).css('border', '#F3C62A');
+                });
+            });
+
+        </script>
+
+    </body>
+</html> 

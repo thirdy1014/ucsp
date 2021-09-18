@@ -1,0 +1,141 @@
+@font-face{
+    font-family: quiapo;
+    src: url("fonts/quiapo.otf");
+}
+
+@font-face{
+    font-family: avenir;
+    src: url("fonts/avenir.ttf");
+}
+
+html{
+    background-color:#FDFEFD;
+}
+
+body{
+    margin: 0;
+    top:0;
+    text-align: center;
+    font-family: avenir;
+    background-color: #FDFEFD;
+    letter-spacing: 2px;
+    display: none;
+}
+
+#home{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    position: relative;
+    align-items: center;
+    font-family: avenir;
+}
+
+#home img{
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #111111;
+    margin-top: -1px;
+}
+
+#footer span{
+    width: 100%;
+    background-color: #DCDCDC;
+    color: #111111;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#footer a{
+    width: 100%;
+    background-color: #DCDCDC;
+    color: #111111;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    letter-spacing: 1px;
+}
+
+#main{
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: avenir;
+}
+img{
+    width: 47.5%;
+    margin-top: 10%;
+}
+
+#message{
+    margin-top: 0%;
+}
+
+#left-pic img{
+    margin-right: 5%;
+}
+
+#right-pic p{
+    margin-right: 5%;
+    width: 90%;
+}
+
+h1{
+    font-family: quiapo;
+    font-size: 3em;
+    letter-spacing: 6px;
+    color: #FF4345;
+}
+h2{
+    font-family: quiapo;
+    font-weight: normal;
+    font-size: 2em;
+    letter-spacing: 3px;
+    color:#2BA4DE;
+    margin-top: 25%;
+}
+
+p{
+    font-family: avenir;
+    letter-spacing: 1px;
+}
+
+#back{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #A4A5A4;
+    font-family: avenir;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border: 1px solid #A4A5A4;
+    letter-spacing: 3px;
+}
+#infolist{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+a{
+    text-decoration: underline;
+    color: #dcdcdc;
+}

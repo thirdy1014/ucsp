@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UCSP PT 1.1</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navstyle.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <navbar><div class="topnav" id="topnav">
+                <ul>
+                    <li><a class="white whiteline" href="index.html">HOME</a></li>
+                    <li><a class="white whiteline" href="about.html" id="current_page">ABOUT</a></li>
+                    <li><a class="white whiteline" href="changes.html">CHANGES</a></li>
+                    <li><a class="white whiteline" href="outcomes.html">OUTCOMES</a></li>
+                    <li><a class="white whiteline" href="reflections.html">REFLECTIONS</a></li>
+                    <li><a class="white whiteline" href="message.html">MESSAGE</a></li>
+                </ul>
+            </div></navbar>
+        </header>
+
+        <div id="main">
+
+            <h1>ABOUT CEBU CITY</h1>
+            <hr style="width: 100%;">
+            <div id="infolist">
+                <div class="info" id="left-pic">
+                    <img src="photos/sinulog.jpg" data-aos="fade-right" alt="Sinulog.jpg">
+                    <div class="description"  data-aos="fade-down"><h2 style="margin-bottom: 0">Culture</h2>
+                        <p style="text-align: left;">Have you ever thought what’s the oldest city in the Philippines that started it all? The site that started our expedition to Christianity. Well look no further because welcome to Cebu City, the queen city of the south. When you think about the city of Cebu, you usually think about its beaches, lechon, or its many tourist attractions, but what actually gives it its true color is its rich culture and history. Cebu is mainly known for its colorful Spanish heritage and history with Portuguese explorer, Ferdinand Magellan and many more explorers following him. Due to this, Cebu is also known as the center of Christianity in the Philippines and has since celebrated the famous Sinulog Festival every 3rd Sunday of January. Aside from this Cebu City holds many different cultural practices, such as not sweeping the floor following a wake because it can lead to the death of a family member. Cebuanos also believe in hosting processions for the dead when on route to the church and cemetery. When it comes to courtship, they believe that it is the best time for a man to court a woman when a star is close to the moon. In the case of farming, it is said that it is best to plant when the tides are low because more crops are yielded during this time. These practices only make a small portion of the many more traditions that Cebu City showcases.</p>
+                    </div>
+                </div>
+
+                <div class="info" id="right-pic">
+                    <div class="description" data-aos="fade-down"><h2>Tourist Destinations</h2>
+                        <p style="text-align: left;">Being a very progressive and beautiful country, Cebu is not only rich in culture but also tourist destinations, both historical and scenic. When having a vacation in Cebu City it is a must to visit Magellan’s Cross, the cross that symbolizes the arrival of Magellan in Cebu. Second is Basilica Minore del Santo Niño. This church is the home to the oldest relic in the Philippines praising Santo Niño, the original image of Santo Niño. Third, we have the Temple of Leah. Boasting an amazing view of Cebu City, the Temple of Leah is also known as the Taj Mahal of Cebu. It serves as a symbol of the love of Teodorico for his wife, Leah, who died of lung cancer. Fourth, Fort San Pedro. This structure is the oldest surviving fort in Cebu City. Rich in Cebu’s history and culture, Fort San Pedro was built by the Spaniards under the command of Miguel Legazpi. Last but definitely not the least, we have Terrazas De Flores Botanical Garden Cebu. Hosting over 120 species of plants and flowers, it is a flower garden where flowers are arranged in a specific way over a mountain slope to create flower terraces with cozy cabanas and cafes for relaxation.</p>
+                    </div>
+                    <img src="photos/temple.jpg" data-aos="fade-left" alt="Temple of Leah.jpg">
+                </div>
+
+                <div class="info" id="left-pic">
+                    <img src="photos/puso.jpg" data-aos="fade-right" alt="Puso.jpg">
+                    <div class="description" data-aos="fade-down"><h2>Food Trademarks</h2>
+                        <p style="text-align: left;">When visiting Cebu, everyone knows you aren’t only visiting for the scenery or its history, but also for its very varied and delicious delicacies. Being an area surrounded by water, seafood has been a very popular staple among the natives, although chicken and pork are equally accessible and eaten by its people. We cannot forget the most important staple of all, which is their rice. This rice can also be eaten in the form of puso, one of Cebu’s greatest delicacies. Other famous delicacies that are a must-try include, lechon, SuTuKil seafood, rosquillos, chicharon, dried mangos, peanut browas, and too much more to state.</p>
+                    </div>
+                </div>
+
+                <div class="info" id="right-pic">
+                    <div class="description" data-aos="fade-down"><h2>Government</h2>
+                        <p style="text-align: left;">As the government imposed lockdown, the majority of Filipino households are left without a source of income. The government proposes a guarantee of subsidy to informal workers keeping them fed amidst the pandemic. In turn, this relieves them of the anxiety of obtaining a source of income since most of them are paid by the hour. Also, this makes poverty-stricken citizens hopeful of the government’s plans in mitigating the adverse effects of the pandemic, whereas lack of plans would provide insecurity among the families and uncertainty of the country’s direction in economic, social, political, and personal aspects.</p>
+                    </div>
+                    <img src="photos/cityhall.jpg" data-aos="fade-left" alt="Cebu City Hall.jpg">
+                </div>
+            </div>
+
+            <a href="#topnav" id="back" data-aos="zoom-in" data-aos-offset="0"> BACK TO TOP</a>
+
+        </div>
+
+        <script>
+
+            AOS.init({duration: 1500,});
+            
+
+            $(document).ready(function () {
+
+                $('body').fadeIn(2000);
+
+                $('#back').hover(function(){
+                    $(this).css('background-color', '#FDFEFD');
+                    $(this).css('color', '#F3C62A');
+                    $(this).css('border', '#A4A5A4');
+                }, function(){
+                    $(this).css('color', '#FDFEFD');
+                    $(this).css('background-color', '#F3C62A');
+                    $(this).css('border', '#F3C62A');
+                });
+            });
+
+        </script>
+
+    </body>
+</html> 

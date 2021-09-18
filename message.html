@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UCSP PT 1.1</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navstyle.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <navbar><div class="topnav" id="topnav">
+                <ul>
+                    <li><a class="white whiteline" href="index.html">HOME</a></li>
+                    <li><a class="white whiteline" href="about.html">ABOUT</a></li>
+                    <li><a class="white whiteline" href="changes.html">CHANGES</a></li>
+                    <li><a class="white whiteline" href="outcomes.html">OUTCOMES</a></li>
+                    <li><a class="white whiteline" href="reflections.html">REFLECTIONS</a></li>
+                    <li><a class="white whiteline" href="message.html" id="current_page">MESSAGE</a></li>
+                </ul>
+            </div></navbar>
+        </header>
+
+        <div id="main">
+
+            <h1>MESSAGE OF ENCOURAGEMENT</h1>
+            <hr style="width: 100%;">
+            <div id="infolist">
+                <div class="info" id="left-pic">
+                    <img src="photos/message.jpg" data-aos="fade-right" alt="Life is tough, but so are you.jpg" id="message">
+                    <div class="description"  data-aos="fade-down">
+                        <p style="text-align: left;">Everywhere we go, all we can see is that this pandemic has been filled with change and opportunity. Most of us have been complacent with the way we live, taking for granted the blessings and people we have around us. Unfortunately, at the hands of ill fate, all of this changed for the worse with the emergence of covid-19. Lives, relationships, jobs and so much more were lost. Yet we must not let this drag us down along with it. Instead, we should look at this as an opportunity to give back to the world. Conforming to social rules and cultural values will definitely make a mark in this trying time. Change starts within us. It may sound cliché, but then there’s a reason why it is. It works and it is effective. We should make it our dream and aspiration to be proactive in responding to this pandemic and the needs of others rather than lying around in our homes, hopelessly waiting for a miracle to happen. If you struggle to find the strength to get up every morning, remember this, “Every morning you have two choices: continue to sleep with your dreams or wake up and chase them.” This pandemic has overstayed its welcome and it is time we make it known to it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#topnav" id="back" data-aos="zoom-in" data-aos-offset="0"> BACK TO TOP</a>
+
+        </div>
+
+        <script>
+
+            AOS.init({duration: 1500,});
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+            window.addEventListener('load', AOS.refresh());
+
+            $(document).ready(function () {
+
+                $('body').fadeIn(2000);
+
+                $('#back').hover(function(){
+                    $(this).css('background-color', '#FDFEFD');
+                    $(this).css('color', '#F3C62A');
+                    $(this).css('border', '#A4A5A4');
+                }, function(){
+                    $(this).css('color', '#FDFEFD');
+                    $(this).css('background-color', '#F3C62A');
+                    $(this).css('border', '#F3C62A');
+                });
+            });
+
+        </script>
+
+    </body>
+</html>
