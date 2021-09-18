@@ -38,11 +38,28 @@
         </div>
 
         <script>
-            AOS.init({duration: 1500,});
+             $(function() {
+          AOS.init(1500);
+     });
             $(window).on('load', function () {
                 AOS.refresh();
             });
             window.addEventListener('load', AOS.refresh());
+
+            $(document).ready(function () {
+
+                $('body').fadeIn(2000);
+
+                $('#back').hover(function(){
+                    $(this).css('background-color', '#FDFEFD');
+                    $(this).css('color', '#F3C62A');
+                    $(this).css('border', '#A4A5A4');
+                }, function(){
+                    $(this).css('color', '#FDFEFD');
+                    $(this).css('background-color', '#F3C62A');
+                    $(this).css('border', '#F3C62A');
+                });
+            });
         </script>
 
     </body>
